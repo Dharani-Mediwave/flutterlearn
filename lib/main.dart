@@ -1,6 +1,7 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
+import 'package:flutterlearn/screens/IconWidgetDemo.dart';
 import 'screens/Dashboard.dart';
 
 void main() => runApp(MyApp());
@@ -18,16 +19,17 @@ class MyApp extends StatelessWidget {
           title: Text('Dashboard'.toUpperCase()),
           backgroundColor: Colors.blueGrey,
         ),
-        body: Center(
-          child: Text(
-            'This random generate number is ${getNumber()}',
-            style: TextStyle(
-              fontSize: 22.0,
-              fontWeight: FontWeight.w700,
-            ),
-          ),
-        ),
+        body: IconWidgetDemo(),
         // body: Dashboard(),
+        // body: Center(
+        //   child: Text(
+        //     'This random generate number is ${getNumber()}',
+        //     style: TextStyle(
+        //       fontSize: 22.0,
+        //       fontWeight: FontWeight.w700,
+        //     ),
+        //   ),
+        // ),
       ),
     );
   }
