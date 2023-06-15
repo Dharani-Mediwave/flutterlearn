@@ -1,8 +1,9 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:flutterlearn/screens/IconWidgetDemo.dart';
-import 'screens/Dashboard.dart';
+import 'package:flutterlearn/screens/ContainerDemo.dart';
+// import 'package:flutterlearn/screens/IconWidgetDemo.dart';
+// import 'screens/Dashboard.dart';
 
 void main() => runApp(MyApp());
 
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
           title: Text('Dashboard'.toUpperCase()),
           backgroundColor: Colors.blueGrey,
         ),
-        body: IconWidgetDemo(),
+        body: const ContainerDemo(),
         // body: Dashboard(),
         // body: Center(
         //   child: Text(

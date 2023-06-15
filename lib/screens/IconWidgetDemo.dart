@@ -19,12 +19,12 @@ class IconWidgetDemo extends StatelessWidget {
       backgroundColor: Colors.deepPurple,
       body: Center(
         child: IconButton(
-          icon: const Icon(FontAwesomeIcons.angular),
-          // ignore: avoid_print
-          onPressed: () => {print('Pressed image')},
-          iconSize: 100,
-          color: Colors.white,
-        ),
+            icon: const Icon(FontAwesomeIcons.angular),
+            // ignore: avoid_print
+            onPressed: () => {print('Pressed image')},
+            iconSize: 100,
+            color: Colors.white,
+          ),
       ),
     );
   }

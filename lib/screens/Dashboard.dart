@@ -5,8 +5,9 @@ class Dashboard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // ignore: prefer_const_constructors
     return Center(
-      child: Text.rich(
+      child: const Text.rich(
         TextSpan(
           text: 'My',
           style: TextStyle(
