@@ -9,12 +9,21 @@ class FirstScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text('First Screen'),
       ),
-      body: Center(
-        child: ElevatedButton(
-          onPressed: () {
-            Navigator.pushNamed(context, '/second');
-          },
-          child: const Text('Launch screen'),
+      body: DecoratedBox(
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            fit: BoxFit.cover,
+            image: NetworkImage(
+                "https://cdn.pixabay.com/photo/2021/08/07/18/36/city-6529108__340.jpg"),
+          ),
+        ),
+        child: Center(
+          child: ElevatedButton(
+            onPressed: () {
+              Navigator.pushNamed(context, '/second');
+            },
+            child: const Text('Launch screen'),
+          ),
         ),
       ),
     );
