@@ -4,12 +4,23 @@ import 'package:flutter/material.dart';
 import 'package:flutterlearn/screens/CustomButtonDemo.dart';
 
 import 'screens/ContainerDemo.dart';
+import 'screens/FirstScreen.dart';
+import 'screens/SecondScreen.dart';
 
 class App extends StatelessWidget {
   const App({super.key});
 
   @override
   Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Named Routes Demo',
+      initialRoute: '/',
+      routes: {
+        '/': (context) => const FirstScreen(),
+        '/second': (context) => const SecondScreen(),
+      },
+    );
+
     return MaterialApp(
       title: 'Flutter basic widget',
       debugShowCheckedModeBanner: false,
@@ -18,17 +29,7 @@ class App extends StatelessWidget {
           title: Text('Dashboard'.toUpperCase()),
           backgroundColor: Colors.blueGrey,
         ),
-        // body: Center(
-        //   child: Text(
-        //     'This random generate number is ${getNumber()}',
-        //     style: TextStyle(
-        //       fontSize: 22.0,
-        //       fontWeight: FontWeight.w700,
-        //     ),
-        //   ),
-        // ),
         body: const CustomButtonDemo(),
-        // body: Dashboard(),
       ),
     );
   }
