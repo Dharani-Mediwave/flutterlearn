@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutterlearn/widgets/BaseBackgroundDecoration.dart';
 import '../widgets/BaseAppBar.dart';
 
 class FirstScreen extends StatelessWidget {
@@ -13,12 +14,7 @@ class FirstScreen extends StatelessWidget {
         widgets: <Widget>[Icon(Icons.more_vert)],
       ),
       body: DecoratedBox(
-        decoration: BoxDecoration(
-          image: DecorationImage(
-            fit: BoxFit.cover,
-            image: AssetImage("images/background.jpg"),
-          ),
-        ),
+        decoration: BaseBackgroundDecoration().baseBackgroundDecoration(),
         child: Center(
           child: ElevatedButton(
             onPressed: () {
