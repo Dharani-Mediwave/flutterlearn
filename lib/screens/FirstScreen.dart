@@ -16,8 +16,7 @@ class FirstScreen extends StatelessWidget {
         decoration: BoxDecoration(
           image: DecorationImage(
             fit: BoxFit.cover,
-            image: NetworkImage(
-                "https://cdn.pixabay.com/photo/2021/08/07/18/36/city-6529108__340.jpg"),
+            image: AssetImage("images/background.jpg"),
           ),
         ),
         child: Center(

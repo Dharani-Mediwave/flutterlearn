@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../widgets/BackgroundClipPath.dart';
 import '../widgets/BaseAppBar.dart';
 
 class SecondScreen extends StatelessWidget {
@@ -6,19 +7,20 @@ class SecondScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double WIDTH = MediaQuery.of(context).size.width;
+
     return Scaffold(
       appBar: BaseAppBar(
         title: Text("Second screen"),
         appBar: AppBar(),
         widgets: <Widget>[Icon(Icons.more_vert)],
       ),
-      body: Center(
-        child: ElevatedButton(
-          onPressed: () {
-            Navigator.pop(context);
-          },
-          child: const Text('Go back!'),
+      body: CustomPaint(
+        size: Size(
+          WIDTH,
+          (WIDTH * 2.2418604651162792).toDouble(),
         ),
+        painter: BackgroundClipPath(),
       ),
     );
   }
