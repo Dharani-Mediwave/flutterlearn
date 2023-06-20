@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../widgets/BaseAppBar.dart';
 
 class SecondScreen extends StatelessWidget {
   const SecondScreen({super.key});
@@ -6,8 +7,10 @@ class SecondScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Second Screen'),
+      appBar: BaseAppBar(
+        title: Text("Second screen"),
+        appBar: AppBar(),
+        widgets: <Widget>[Icon(Icons.more_vert)],
       ),
       body: Center(
         child: ElevatedButton(
