@@ -2,6 +2,7 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:flutterlearn/screens/CustomButtonDemo.dart';
+import 'package:flutterlearn/screens/RowColumnDemo.dart';
 
 import 'screens/ContainerDemo.dart';
 import 'screens/FirstScreen.dart';
@@ -14,10 +15,12 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Named Routes Demo',
-      initialRoute: '/',
+      debugShowCheckedModeBanner: false,
+      initialRoute: '/layoutdesign',
       routes: {
         '/': (context) => const FirstScreen(),
         '/second': (context) => const SecondScreen(),
+        '/layoutdesign': (context) => const RowColumnDemo()
       },
     );
 

@@ -16,6 +16,7 @@ class BaseAppBar extends StatelessWidget implements PreferredSizeWidget {
   Widget build(BuildContext context) {
     return AppBar(
       title: title,
+      elevation: 0,
       backgroundColor: backgroundColor,
       actions: widgets,
     );
