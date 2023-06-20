@@ -27,19 +27,21 @@ class SecondScreen extends StatelessWidget {
         ),
       ),
     );
-    return Scaffold(
-      appBar: BaseAppBar(
-        title: Text("Second screen"),
-        appBar: AppBar(),
-        widgets: <Widget>[Icon(Icons.more_vert)],
-      ),
-      body: CustomPaint(
-        size: Size(
-          WIDTH,
-          (WIDTH * 2.2418604651162792).toDouble(),
-        ),
-        painter: BackgroundClipPath(),
-      ),
-    );
+
+    // Below code use custom clippath
+    // return Scaffold(
+    //   appBar: BaseAppBar(
+    //     title: Text("Second screen"),
+    //     appBar: AppBar(),
+    //     widgets: <Widget>[Icon(Icons.more_vert)],
+    //   ),
+    //   body: CustomPaint(
+    //     size: Size(
+    //       WIDTH,
+    //       (WIDTH * 2.2418604651162792).toDouble(),
+    //     ),
+    //     painter: BackgroundClipPath(),
+    //   ),
+    // );
   }
 }
