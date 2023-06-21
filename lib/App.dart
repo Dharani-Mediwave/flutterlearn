@@ -1,7 +1,7 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:flutterlearn/layoutdesign/doctor_profile.dart';
+import 'package:flutterlearn/layoutdesign/doctorlayout/doctor_profile.dart';
 import 'package:flutterlearn/screens/CustomButtonDemo.dart';
 import 'package:flutterlearn/screens/RowColumnDemo.dart';
 
