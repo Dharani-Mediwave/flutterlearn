@@ -1,6 +1,7 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
+import 'package:flutterlearn/layoutdesign/doctor_profile.dart';
 import 'package:flutterlearn/screens/CustomButtonDemo.dart';
 import 'package:flutterlearn/screens/RowColumnDemo.dart';
 
@@ -13,16 +14,23 @@ class App extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Named Routes Demo',
+    // return MaterialApp(
+    //   title: 'Named Routes Demo',
+    //   debugShowCheckedModeBanner: false,
+    //   initialRoute: '/layoutdesign',
+    //   routes: {
+    //     '/': (context) => const FirstScreen(),
+    //     '/second': (context) => const SecondScreen(),
+    //     '/layoutdesign': (context) => const RowColumnDemo()
+    //   },
+    // );
+
+    return const MaterialApp(
+      title: "Doctor profile",
       debugShowCheckedModeBanner: false,
-      initialRoute: '/layoutdesign',
-      routes: {
-        '/': (context) => const FirstScreen(),
-        '/second': (context) => const SecondScreen(),
-        '/layoutdesign': (context) => const RowColumnDemo()
-      },
+      home: DoctorProfile(),
     );
+
 
     return MaterialApp(
       title: 'Flutter basic widget',

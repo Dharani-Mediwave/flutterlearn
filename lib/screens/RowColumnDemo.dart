@@ -8,7 +8,6 @@ class RowColumnDemo extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: null,
-
       body: SafeArea(
         top: true,
         child: DecoratedBox(
@@ -28,21 +27,27 @@ class RowColumnDemo extends StatelessWidget {
                             Text(
                               "Welcome back",
                               style: TextStyle(
-                                color: Colors.black,
+                                color: Colors.white,
                                 fontSize: 20.0,
                               ),
                             ),
                             Text(
                               "Alan Donald",
                               style: TextStyle(
-                                color: Colors.black,
+                                color: Colors.white,
                                 fontSize: 20.0,
                                 fontWeight: FontWeight.bold,
                               ),
                             ),
                           ],
                         ),
-                        Text("Action icon"),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          children: [
+                            Icon(Icons.notification_add, color: Colors.white,),
+                            Icon(Icons.menu, color: Colors.white,)
+                          ],
+                        ),
                       ],
                     ),
                   ],
@@ -57,6 +62,7 @@ class RowColumnDemo extends StatelessWidget {
                         style: TextStyle(
                           fontSize: 30.0,
                           fontWeight: FontWeight.bold,
+                          color: Colors.white
                         ),
                       ),
                     ),
@@ -67,6 +73,7 @@ class RowColumnDemo extends StatelessWidget {
                         style: TextStyle(
                           fontSize: 30.0,
                           fontWeight: FontWeight.bold,
+                          color: Colors.white
                         ),
                       ),
                     ),
