@@ -32,17 +32,17 @@ class App extends StatelessWidget {
     );
 
 
-    return MaterialApp(
-      title: 'Flutter basic widget',
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('Dashboard'.toUpperCase()),
-          backgroundColor: Colors.blueGrey,
-        ),
-        body: const CustomButtonDemo(),
-      ),
-    );
+    // return MaterialApp(
+    //   title: 'Flutter basic widget',
+    //   debugShowCheckedModeBanner: false,
+    //   home: Scaffold(
+    //     appBar: AppBar(
+    //       title: Text('Dashboard'.toUpperCase()),
+    //       backgroundColor: Colors.blueGrey,
+    //     ),
+    //     body: const CustomButtonDemo(),
+    //   ),
+    // );
   }
 }
 
