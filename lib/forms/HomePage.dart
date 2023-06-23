@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutterlearn/forms/DetailedPage.dart';
+import 'package:flutterlearn/forms/ProductForm.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -28,7 +29,7 @@ class HomePage extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) {
-                  return const DetailedPage();
+                  return const ProductForm();
                 }),
               );
             },

@@ -1,7 +1,14 @@
 import 'package:flutter/material.dart';
 
 class DetailedPage extends StatelessWidget {
-  const DetailedPage({super.key});
+  String productName;
+
+  DetailedPage({
+    Key? key,
+    required this.productName,
+  }) : super(key: key);
+
+  // const DetailedPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -17,6 +24,14 @@ class DetailedPage extends StatelessWidget {
                 fontSize: 24.0,
                 fontWeight: FontWeight.bold,
                 color: Colors.black,
+              ),
+            ),
+            Text(
+              "Product user name is $productName",
+              style: const TextStyle(
+                fontSize: 20.0,
+                fontWeight: FontWeight.normal,
+                color: Colors.green,
               ),
             ),
             ElevatedButton(
