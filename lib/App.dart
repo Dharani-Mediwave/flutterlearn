@@ -3,6 +3,7 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutterlearn/layoutdesign/doctorlayout/doctor_profile.dart';
 import 'package:flutterlearn/screens/CustomButtonDemo.dart';
+import 'package:flutterlearn/screens/ResposiveLayoutDesign.dart';
 import 'package:flutterlearn/screens/RowColumnDemo.dart';
 
 import 'screens/ContainerDemo.dart';
@@ -28,7 +29,7 @@ class App extends StatelessWidget {
     return const MaterialApp(
       title: "Doctor profile",
       debugShowCheckedModeBanner: false,
-      home: DoctorProfile(),
+      home: ResponsiveLayoutDesign(),
     );
 
 

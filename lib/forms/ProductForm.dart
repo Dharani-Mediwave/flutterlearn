@@ -12,6 +12,8 @@ class _ProductFormState extends State<ProductForm> {
   var _productName = "";
   final _productController = TextEditingController();
 
+  bool? _listTileCheckbox = false;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -31,6 +33,16 @@ class _ProductFormState extends State<ProductForm> {
               ),
             ),
             const SizedBox(height: 10.0),
+            CheckboxListTile(
+              title: const Text("Top product"),
+              value: _listTileCheckbox,
+              controlAffinity: ListTileControlAffinity.leading,
+              onChanged: (val) {
+                setState(() {
+                  _listTileCheckbox = val;
+                });
+              },
+            ),
             OutlinedButton(
               onPressed: () {
                 Navigator.push(
