@@ -3,6 +3,7 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutterlearn/layoutdesign/doctorlayout/doctor_profile.dart';
 import 'package:flutterlearn/screens/CustomButtonDemo.dart';
+import 'package:flutterlearn/screens/ListviewDemo.dart';
 import 'package:flutterlearn/screens/ResposiveLayoutDesign.dart';
 import 'package:flutterlearn/screens/RowColumnDemo.dart';
 
@@ -15,6 +16,13 @@ class App extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
+    return const MaterialApp(
+      title: "List demo",
+      debugShowCheckedModeBanner: false,
+      home: ListviewDemo(),
+    );
+
     // return MaterialApp(
     //   title: 'Named Routes Demo',
     //   debugShowCheckedModeBanner: false,
@@ -26,11 +34,11 @@ class App extends StatelessWidget {
     //   },
     // );
 
-    return const MaterialApp(
-      title: "Doctor profile",
-      debugShowCheckedModeBanner: false,
-      home: ResponsiveLayoutDesign(),
-    );
+    // return const MaterialApp(
+    //   title: "Doctor profile",
+    //   debugShowCheckedModeBanner: false,
+    //   home: ResponsiveLayoutDesign(),
+    // );
 
 
     // return MaterialApp(
